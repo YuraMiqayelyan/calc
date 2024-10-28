@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculyator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <table>
+            <tr>
+                <th colspan="4" >
+                    <input type="text"id="input"   placeholder="0" readonly>
+                    <br>
+                    <input type="text"id="answer" style="color: green; font-size: 40px;"  readonly>
+                </th>
+            </tr>
+            
+            <tr>
+                <td>
+                <input type="submit" value="AC" class="color" onclick="patasxan()">
+                </td>
+                <td>
+                    <input type="submit" value="C" class="color" onclick="patasxan()">
+                </td>
+                <td>
+                    <input type="submit" value="/" class="color" onclick="getOper('/')">
+                </td>
+                <td><input type="submit" value="*" class="color" onclick="getOper('*')"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="7" onclick="getNum(7)">
+                </td>
+                <td>
+                    <input type="submit" value="8" onclick="getNum(8)">
+                </td>
+                <td>
+                    <input type="submit" value="9" onclick="getNum(9)">
+                </td>
+                <td><input type="submit" value="-" class="color" onclick="getOper('-')"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="4" onclick="getNum(4)">
+                </td>
+                <td>
+                    <input type="submit" value="5" onclick="getNum(5)">
+                </td>
+                <td>
+                    <input type="submit" value="6" onclick="getNum(6)">
+                </td>
+                <td>
+                    <input type="submit" value="+" class="color" onclick="getOper('+')">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="1" onclick="getNum(1)"></td>
+                <td><input type="submit" value="2" onclick="getNum(2)"></td>
+                <td><input type="submit" value="3" onclick="getNum(3)"></td>
+                <td><input type="submit" value="." class="color" onclick="getOper('.')"></td>
+            </tr>  
+            <tr>  
+                <td><input type="submit" value="(" ></td>
+                <td><input type="submit" value="0" onclick="getNum(0)"></td>
+                <td><input type="submit" value=")"></td>
+                <td><input type="submit" value="=" class="color"  onclick="comperison()"></td>
+            </tr>  
+
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
